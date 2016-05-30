@@ -18,11 +18,11 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="kill"
+        android:text="stop"
         android:id="@+id/button"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentEnd="false" />
+        android:layout_alignEnd="@+id/button3"
+        android:layout_alignStart="@+id/button3" />
 
     <Button
         android:layout_width="wrap_content"
@@ -30,7 +30,8 @@
         android:text="run"
         android:id="@+id/button2"
         android:layout_below="@+id/button"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignEnd="@+id/button"
+        android:layout_alignStart="@+id/button" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -39,4 +40,12 @@
         android:text="push rtmp://192.168.1.140:1935/live1/room1;"
         android:layout_below="@+id/textView"
         android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="install"
+        android:id="@+id/button3"
+        android:layout_above="@+id/button"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
